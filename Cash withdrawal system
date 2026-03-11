@@ -1,8 +1,8 @@
 #This is a cash withdrawal system in Python
 #Variables
-saldo = 2500
-limite_especial = 500
-cheque_premium = 1000
+SALDO = 2500
+LIMITE_ESPECIAL = 500
+CHEQUE_PREMIUM = 1000
 
 #Initial menu
 opcao = int(input("Informe a sua conta:\n[1]Conta corrente \n[2]Conta universitária \n[3]Conta Premium\n"))
@@ -10,21 +10,21 @@ opcao = int(input("Informe a sua conta:\n[1]Conta corrente \n[2]Conta universit�
 #options
 if opcao == 1:
     saque = int(input("Informe o saque desejado:\n"))
-    if saque <= saldo + limite_especial:
+    if saque <= SALDO + LIMITE_ESPECIAL:
         print ("Saque realizado com sucesso!")
     else:
         print ("Saque não realizado! Saldo não disponível!")
 
 elif opcao == 2:
     saque = int(input("Informe o saque desejado:\n"))
-    if saldo >= saque:
+    if SALDO >= saque:
         print ("Saque realizado com sucesso!")                   
     else:
         print ("Saque não realizado! Saldo não disponível!")
 
 elif opcao == 3:
     saque = int(input("Informe o saque desejado:\n"))
-    if saque <= saldo + limite_especial + cheque_premium:
+    if saque <= SALDO + LIMITE_ESPECIAL + CHEQUE_PREMIUM:
         print ("Saque realizado com sucesso!")
     else:
         print ("Saque não realizado! Saldo não disponível!")
