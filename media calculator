@@ -1,0 +1,20 @@
+#This is a Python program that calculates grades and indicates whether they pass or fail.
+media = 5
+
+nota_1 = float(input("Informe a primeira nota:\n"))
+#nota_1 is the variable related to the grade of the first test
+
+nota_2 = float(input("Informe a segunda nota:\n"))
+#nota_2 is the variable related to the grade of the second test
+
+nota_final = ((nota_1 + nota_2) / 2)
+#nota_final is the variable related to the sum about the first and second grades
+
+if nota_final >= media: 
+
+    print(f"Parabens! Voce foi aprovado! Nota final: {nota_final}" )
+#The message congrulates the successful applicant
+else:
+
+    print(f"Reprovado! Nota final: {nota_final}" ) 
+#The message indicates that was rejected
