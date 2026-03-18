@@ -1,0 +1,18 @@
+#Vowel counter
+
+#Constants and variables
+VOGAIS = "AEIOUaeiou"
+contador = 0
+
+#Input a text or a word
+texto = input()
+
+#Counter
+for char in texto:
+    if char in VOGAIS:
+        contador += 1
+
+#number of vowels
+print(f"O número de vogais na string '{texto}' é: {contador} ")
+
+print ()
