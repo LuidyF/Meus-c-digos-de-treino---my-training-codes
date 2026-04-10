@@ -1,6 +1,8 @@
+#Inicialização do código com entrada do valor e escolha da forma de pagamento
 valor = float(input("Valor: "))
 menu_choose = int(input("Forma de pagamento:\n[1] À Vista \n[2]Parcelado \n"))
 
+#Condições de desconto ou acréscimo mediante escolha de forma de pagamento
 if menu_choose == 1:
     menu_choose2 = int(input("[1] Dinheiro \n[2] Pix \n[3] Crédito \n"))
     if menu_choose2 == 1 or menu_choose2 == 2:
