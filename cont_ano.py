@@ -1,5 +1,6 @@
 from datetime import date
 
+#Definindo função para calcular sua idade mediante entrada de informação do ano de nascimento
 def calc_idade():
     ano_atual = date.today().year
     
@@ -15,4 +16,5 @@ def calc_idade():
     print(f"{meses} meses")
     print(f"{dias} dias")
 
+#Executando função
 calc_idade()
