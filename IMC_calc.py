@@ -1,8 +1,11 @@
+#Entrada de informações iniciais de peso e altura
 peso = float(input("Peso: "))
 altura = float(input("Altura: "))
 
+#Calculo de IMC
 IMC = peso / (altura) ** 2
 
+#Condições de IMC
 if IMC < 18.5:
     print(f"Abaixo do peso ideal! {IMC}")
 
